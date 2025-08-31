@@ -1,29 +1,32 @@
-# 🌐 DOM-Manipulation
+# 🌐 DOM-Manipulation – Mini-Portfolio
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/LukaszPalmer/DOM-Manipulation?style=flat-square)
 ![GitHub language count](https://img.shields.io/github/languages/count/LukaszPalmer/DOM-Manipulation?style=flat-square)
 ![GitHub top language](https://img.shields.io/github/languages/top/LukaszPalmer/DOM-Manipulation?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/LukaszPalmer/DOM-Manipulation?style=flat-square)
+![GitHub stars](https://img.shields.io/github/stars/LukaszPalmer/DOM-Manipulation?style=social)
 
 ---
 
 ## 🔹 Projektbeschreibung
 
-Dieses Repository dient als Lern- und Übungsprojekt zur **DOM-Manipulation mit Vanilla JavaScript**.  
-Ziel ist es, alle grundlegenden und fortgeschrittenen Techniken des DOMs zu beherrschen, um **interaktive, dynamische Webanwendungen** zu erstellen.  
+Dieses Repository ist mein **Lern- und Übungsprojekt zur DOM-Manipulation mit Vanilla JavaScript**.  
+Ziel ist es, **interaktive, dynamische Webanwendungen** zu erstellen und meine Fähigkeiten für **Fullstack- oder Frontend-Projekte** zu demonstrieren.
+
+> 💡 Dieses Projekt zeigt, dass ich moderne Webentwicklung beherrsche – von DOM-Zugriff über Events bis zu fortgeschrittenen APIs.
 
 ---
 
 ## 🚀 Themenbereiche
 
-### 1️⃣ DOM Zugriff (Auswahl von Elementen)
+### 🟢 DOM Zugriff (Elemente auswählen)
 - `document.getElementById("id")`  
 - `document.getElementsByClassName("class")`  
 - `document.getElementsByTagName("div")`  
 - `document.querySelector(".class oder #id oder [attr=value]")`  
 - `document.querySelectorAll("selector")` → NodeList (forEach nutzbar)  
 
-### 2️⃣ DOM Traversing (Navigieren im DOM)
+### 🟡 DOM Traversing (Navigieren)
 - `parentNode / parentElement`  
 - `children / childNodes`  
 - `firstChild / lastChild`  
@@ -32,7 +35,7 @@ Ziel ist es, alle grundlegenden und fortgeschrittenen Techniken des DOMs zu behe
 - `nextElementSibling / previousElementSibling`  
 - `closest("selector")` → nächster passender Vorfahre  
 
-### 3️⃣ Elemente erstellen & einfügen
+### 🔵 Elemente erstellen & einfügen
 - `document.createElement("div")`  
 - `document.createTextNode("Text")`  
 - `parent.appendChild(child)`  
@@ -43,40 +46,32 @@ Ziel ist es, alle grundlegenden und fortgeschrittenen Techniken des DOMs zu behe
 - `element.replaceWith(newNode)`  
 - `element.remove()`  
 
-### 4️⃣ Attribute
+### 🟣 Attribute & Klassen
 - `element.getAttribute("attr")`  
 - `element.setAttribute("attr", "value")`  
 - `element.hasAttribute("attr")`  
 - `element.removeAttribute("attr")`  
-- Direktzugriff: `element.id`, `element.src`, `element.value`  
-
-### 5️⃣ Klassen & Styles
-- `element.classList.add("class")`  
-- `element.classList.remove("class")`  
-- `element.classList.toggle("class")`  
-- `element.classList.contains("class")`  
+- `element.id`, `element.src`, `element.value`  
+- `element.classList.add/remove/toggle/contains`  
 - `element.style.property = "value"`  
-- `getComputedStyle(element).property`  
 
-### 6️⃣ Inhalte verändern
-- `element.textContent = "Text"`  
-- `element.innerText = "Text"`  
-- `element.innerHTML = "<b>HTML</b>"`  
+### 🟠 Inhalte verändern
+- `element.textContent`, `element.innerText`, `element.innerHTML`  
 - `element.insertAdjacentHTML("beforebegin" | "afterbegin" | "beforeend" | "afterend", htmlString)`  
 
-### 7️⃣ Events & Event Handling
+### 🔴 Events & Event Handling
 - `element.addEventListener("click", handler)`  
 - `element.removeEventListener("click", handler)`  
 - Event-Objekt: `event.target`, `event.currentTarget`, `event.preventDefault()`, `event.stopPropagation()`  
 - Event-Bubbling vs. Capturing  
 - Delegation: Eventlistener am Parent + Prüfung von `event.target`  
 
-### 8️⃣ Formularelemente
+### 🟤 Formulare & Interaktionen
 - `input.value`, `textarea.value`, `select.value`  
 - `checkbox.checked`  
 - `form.submit()`, `form.reset()`  
 
-### 9️⃣ Fortgeschrittene Themen
+### ⚪ Fortgeschrittene APIs
 - **Shadow DOM**: `element.attachShadow({ mode: "open" })`  
 - **Mutation Observer**  
 - **Intersection Observer**  
@@ -86,15 +81,5 @@ Ziel ist es, alle grundlegenden und fortgeschrittenen Techniken des DOMs zu behe
 
 ---
 
-## 💡 Ziel des Projekts
 
-Dieses Projekt zeigt:
-- Praktische Anwendung aller DOM-Techniken  
-- Erstellung dynamischer Web-Komponenten  
-- Vorbereitung auf Fullstack- oder Frontend-Projekte  
-- Sauberen, modernen und performanten JavaScript-Code  
-
----
-
-## 📂 Projektstruktur
 
