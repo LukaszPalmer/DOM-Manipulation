@@ -76,14 +76,35 @@ for(let l of linkElement){
 }
 
 
+//TODO: Mini-Task
+const manipulateDOM = () => {
+    const h1 = document.querySelector('h1');
+    h1.style.color = "green";
+    h1.innerHTML = "Hallo Willkommen";
 
+    const p = document.getElementsByTagName('p');
+    p[0].style.color = "yellow";
+    p[1].style.color = "darkgreen";
+    p[2].style.color = "red";
 
+    p[0].textContent = "First-Change";
+    p[1].innerHTML = "Second-Change";
+    p[2].innerHTML = "Third-Change";
 
+    const section = document.querySelectorAll('section');
+    section.forEach((param) => {
+        param.innerHTML += " <i>(Changed from JS)</i>"; 
+        
+    });
+    const links = document.getElementsByClassName("link"); 
+    for (let i = 0; i < links.length; i++) {
+        links[i].setAttribute("href", "https://www.youtube.com"); 
+        links[i].setAttribute("target", "_blank");
+        links[i].innerHTML = "YouTube";
+    }
+}
 
-
-
-
-
+manipulateDOM();
 
 
 
