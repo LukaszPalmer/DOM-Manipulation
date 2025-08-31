@@ -5,31 +5,75 @@
 // - document.querySelector(".class oder #id oder [attr=value]")
 // - document.querySelectorAll("selector") -> NodeList (forEach nutzbar)
 
+//! Document.getElementByID('id') => sucht nach einem Element anhand seiner ID
+//! Gibt direkt das element zurück
+//! ID's sind was einzigartiges
+
+const uniqueSection = document.getElementById("id");
+uniqueSection.style.color = "red";
 
 
+//! document.getElementsByClassName("class") => liefert ganze collektion dieser Classe aber kein echtes array.
+//! Man kann trotzdem for oder for of verwenden
+//! wir können es aber auch mit Indexen aufrufen
+//! innerHTML erlaubt es und Tags miteinzufügen
+//! textContent nur reinen text
+//! Wir können auch eine normale Schleife benutzen
+
+const text = document.getElementsByClassName("text");
+for(let letters of text){
+    letters.innerHTML = "<b>Changed Text</b>";
+}
+text[0].textContent = "Changed Again... With textContent";
+
+for(let i = 0; i < text.length; i++){
+    text[i].textContent = "NEU" + (i+ 1);
+}
 
 
+//! QuerySelectorAll(".class") gehört zu einer NodeList und nicht zu einer HTML Collection
+//! Erlaubt uns forEach zu verwenden
 
 
+const sectionElements = document.querySelectorAll(".sectionClass2");
+sectionElements.forEach((section) => {
+    section.innerHTML = '<i>Changed</i>'
+})
 
 
+//! getElementsByTagName("div") oder andere Elemente die es im HTML gibt
+//! Gibt eine HTML collection wieder, denk dran was keine NodeList ist 
+
+const sections = document.getElementsByTagName("section");
+for(let i = 0; i < sections.length; i++){
+    sections[i].style.background = "pink";
+    sections[i].style.width = "100%";
+}
+
+/* 
+🔥 DOM-Auswahl Methoden Übersicht 🔥
+
+Methode                  | Rückgabe       | Alle Elemente möglich? | CSS-Selector möglich?
+--------------------------|----------------|----------------------|---------------------
+getElementById           | 1 Element      | ❌                   | ❌
+getElementsByClassName   | HTMLCollection | ✅                   | ❌
+getElementsByTagName     | HTMLCollection | ✅                   | ❌
+querySelector            | 1 Element      | ❌                   | ✅
+querySelectorAll         | NodeList       | ✅                   | ✅
+*/
 
 
+//! setAttribute("attribut", "wert")
+//! bei allen HTML Tags die Attribute haben können wir dadurch attribute hinzufügen un ebenfalls löschen
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+const linkElement = document.getElementsByClassName("link");
+for(let l of linkElement){
+    l.setAttribute("href", "https://www.google.com");
+    l.setAttribute("target", "_blank");              
+    l.setAttribute("title", "Google öffnen");
+    l.textContent = "Google";
+}
 
 
 
