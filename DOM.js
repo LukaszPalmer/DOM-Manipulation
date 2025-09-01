@@ -120,29 +120,6 @@ const secondFunctionManipulateDOM = () => {
 
 secondFunctionManipulateDOM();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // # DOM Traversing (Navigieren im DOM)
 // - parentNode / parentElement
 // - children / childNodes
@@ -154,7 +131,8 @@ secondFunctionManipulateDOM();
 
 
 
-
+// ! parentNode : geht nach oben im HTML dokument und gibt das Eltern-Element zurück
+// ! 
 
 
 
