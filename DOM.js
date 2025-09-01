@@ -131,8 +131,128 @@ secondFunctionManipulateDOM();
 
 
 
-// ! parentNode : geht nach oben im HTML dokument und gibt das Eltern-Element zurück
-// ! 
+// ! parentNode : allgemeiner, gibt auch Nicht-Elemente zurück.
+// ! parentElement : spezieller, nur wenn der Parent ein Element ist.
+
+const paragraphParent = document.querySelector('p');
+const ParentOfP = paragraphParent.parentNode;
+
+
+// ! children : Gibt nur die Element-Kinder zurück 
+// ! ChildrenNodes: gibt alles zurück wie leerzeichen, kommentare, tags, text zurück => nodeList
+
+const childrenOfBody = document.querySelector('body');
+childrenOfBody.childNodes;
+
+
+// ! firstElementChild: ist praktisch weil es nur Elemente zurück gibt
+// ! lastElementChild: ist praktisch weil es nur Elemente zurück gibt
+
+
+// ! closest: nächsten passenden Vorfahren hochlaufen
+
+
+/*parentElement → Eltern-Element holen
+
+children → alle direkten Kinder-Elemente holen
+
+firstElementChild / lastElementChild → erstes/letztes Kind-Element
+
+nextElementSibling / previousElementSibling → Nachbarn im gleichen Level
+
+closest("selector") → zum nächsten passenden Vorfahren hochlaufe*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
