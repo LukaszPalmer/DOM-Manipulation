@@ -104,7 +104,31 @@ const manipulateDOM = () => {
     }
 }
 
-manipulateDOM();
+manipulateDOM()
+
+
+const secondFunctionManipulateDOM = () => {
+
+    const styleH2 = document.querySelector('h2');
+    if(styleH2.textContent.length === 0){
+        styleH2.textContent = 'zweite Überschrift';
+        styleH2.style.color = 'hotpink';
+        styleH2.style.background = "black";
+        styleH2.innerHTML += '<b>....</b>'
+    }
+}
+
+secondFunctionManipulateDOM();
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -127,6 +151,30 @@ manipulateDOM();
 // - nextSibling / previousSibling
 // - nextElementSibling / previousElementSibling
 // - closest("selector") -> nächster Vorfahre, der passt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // # Elemente erstellen & einfügen
 // - document.createElement("div")
