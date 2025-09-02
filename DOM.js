@@ -273,18 +273,6 @@ closest("selector") → zum nächsten passenden Vorfahren hochlaufe*/
 
 
 
-
-// # Elemente erstellen & einfügen
-// - document.createElement("div")
-// - document.createTextNode("Text")
-// - parent.appendChild(child)
-// - parent.insertBefore(newNode, referenceNode)
-// - element.append(...nodes) (mehrere Nodes/Strings auf einmal)
-// - element.prepend(node)
-// - element.before(node), element.after(node)
-// - element.replaceWith(newNode)
-// - element.remove() (löscht sich selbst)
-
 // # Attribute
 // - element.getAttribute("attr")
 // - element.setAttribute("attr", "value")
