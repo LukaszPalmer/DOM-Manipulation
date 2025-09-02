@@ -52,3 +52,16 @@ const removeSomethingFromDOM = () => {
     secondSection.remove(p);
 }
 removeSomethingFromDOM();
+
+
+const insertArticleBetweenSection = () => {
+
+    const article = document.createElement("article");
+    const p = document.createElement('p');
+    p.textContent = "ich bin ein p";
+    article.append(p);
+
+    const secondSection = document.getElementById("second-section");
+    secondSection.before(article);
+}
+insertArticleBetweenSection();
