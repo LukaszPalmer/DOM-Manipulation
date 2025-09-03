@@ -152,16 +152,6 @@ childrenOfBody.childNodes;
 // ! closest: nächsten passenden Vorfahren hochlaufen
 
 
-// # Inhalte verändern
-// - element.textContent = "Text"
-// - element.innerText = "Text" (berücksichtigt CSS)
-// - element.innerHTML = "<b>HTML</b>" (Achtung XSS!)
-// - element.insertAdjacentHTML("beforebegin" | "afterbegin" | "beforeend" | "afterend", htmlString)
-
-// # Formularelemente
-// - input.value, textarea.value, select.value
-// - checkbox.checked
-// - form.submit(), form.reset()
 
 // # Events (Event Handling)
 // - element.addEventListener("click", handler)
