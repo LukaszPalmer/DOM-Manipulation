@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Übung Attribute & Styles</title>
+        <style>
+            .highlight {
+                background-color: yellow;
+                font-weight: bold;
+            }
+            .hidden {
+                display: none;
+            }
+            .active {
+                border: 2px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="main-title">Übungsseite</h1>
+        <a id="my-link" href="https://google.com" title="Gehe zu Google"
+            >Google</a
+        >
+        <br /><br />
+        <input type="text" id="my-input" value="Startwert" />
+        <br /><br />
+        <img
+            id="my-image"
+            src="https://via.placeholder.com/100"
+            alt="Platzhalter"
+        />
+        <br /><br />
+        <button id="action-btn">Aktion</button>
+        <button id="toggle-btn">Toggle</button>
+        <script src="DOM3.js"></script>
+    </body>
+</html>
