@@ -75,19 +75,66 @@ const createForm = () => {
     Object.entries(formAttributes).forEach(([key,value]) => {
         form.setAttribute(key,value);
     });
-    //TODO: Now lets add Text into label and create first inputfield type "password"
+    //TODO: Now lets add Text into label and create first inputfield type "text"
     label.setAttribute('for','password');
     label.textContent = 'Benutzername:';
     const inputAtributes = {
         type: 'text',
         id: 'username',
         name: 'username',
-        required: ''
+        required: '',
+        placeholder: "Benutzername.."
     };
     Object.entries(inputAtributes).forEach(([key,value]) => {
         input.setAttribute(key,value);
     });
-    
+    //TODO: Now create another label and place it after input
+    const secondLabel = document.createElement('label')
+    const secondInput = document.createElement('input');
+    //TODO: Now give both of them attributes
+    secondLabel.textContent = 'password:';
+    const secondLabelAttributeAndText = {
+        for: 'passowrd',
+    };
+    Object.entries(secondLabelAttributeAndText).forEach(([key,value]) => {
+        secondLabel.setAttribute(key,value);
+    })
+    const secondInputAttributes = {
+        type: 'password',
+        id: 'password',
+        name: 'password',
+        required: '',
+        placeholder: 'password...'
+    };
+    Object.entries(secondInputAttributes).forEach(([key,value]) => {
+        secondInput.setAttribute(key,value);
+    })
+    //TODO: Now append new input and new lable
+    form.appendChild(secondLabel);
+    form.appendChild(secondInput);
+
+    //TODO: Now style Form for flex column
+    form.style.display = 'flex';
+    form.style.flexDirection = 'column';
+    const formStyles = {
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '0.5rem'
+    };
+    Object.assign(form.style, formStyles);
+
+    //!Das ist wenn du alles nacheinander machen wollen würdest... Aber um es zu erleichtern gibt es Helperfunktionen.
+    const createElementWithAtrributes = (tag, attributes = {}, text = '') => {
+        const element = document.createElement(tag);
+        Object.entries(attributes).forEach(([key, value]) => {
+            element.setAttribute(key, value);
+        });
+        if(text){
+            element.textContent = text;
+        }
+        return element;
+    };
+    const newLabel = createElementWithAtrributes("label",{for: "username"}, "Benutzername");
     
 }
 createForm();
