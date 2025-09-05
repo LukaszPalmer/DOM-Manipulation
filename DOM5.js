@@ -145,6 +145,8 @@ const createElements = (tag, options = {}) => {
     return el;
 };
 
+export default createElements;
+
 createElements("div", {
     text: "Hallo Welt",
     classes: "box red",
